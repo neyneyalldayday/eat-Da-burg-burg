@@ -1,0 +1,26 @@
+{
+  "name": "eat-da-burg-burg",
+  "version": "1.0.0",
+  "description": "a burger creating eating app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neyneyalldayday/eat-Da-burg-burg.git"
+  },
+  "author": "neyney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neyneyalldayday/eat-Da-burg-burg/issues"
+  },
+  "homepage": "https://github.com/neyneyalldayday/eat-Da-burg-burg#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "my": "^0.3.3",
+    "mysql": "^2.18.1",
+    "sql": "^0.78.0"
+  }
+}
