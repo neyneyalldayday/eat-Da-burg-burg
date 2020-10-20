@@ -2,14 +2,14 @@ var connection = require("./connection.js");
 
 var orm = {
     selectAll: function(tableInput, consb) {
-        let querryStr = "SELECT * FROM" + tableInput + ";";
+        let queryStr = "SELECT * FROM" + tableInput + ";";
         connection.query(queryStr, function (err, res) {
             if (err) throw err;
             consb(res)
         })
     },
     insertOne: function(newBurg, consb) {
-        let querryStr = "INSERT INTO burgers (burger_name) VALUES ('" + newBurg + "');";
+        let queryStr = "INSERT INTO burgers (burger_name) VALUES ('" + newBurg + "');";
         connection.query(queryStr,function(err, res) {
             if(err) throw err;
             consb(res);
