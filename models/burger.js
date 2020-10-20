@@ -1,3 +1,3 @@
 var orm = require("./config/orm");
 
-module.exports =  burgers;
+module.exports =  burger;
