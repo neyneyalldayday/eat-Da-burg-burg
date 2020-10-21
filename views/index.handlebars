@@ -5,19 +5,41 @@
 
 
 
-<ul>
-    {{#each burger}}
-    <il>
-        <p>{{this.id}} {{this.burger_name}}</p>
-    </il>
-    {{/each}}
-</ul>
+<div class= "container">
+    <div class="row">
+        <div class="col-5">Burgs for the eating</div>
+        <div class="col-2">EAT ME!</div>
+        <div class="col-5">scarfed burgs</div>
+    </div>
+    <div class="row burgSpot">
+        <div class="col-5 addedBurgs">
+            {{#each burgers}}
+            {{#unless devoured}}
+            <div class="nameOfBurg">{{id}}. {{burger_name}}</div>
+            {{/unless}}
+        </div>
+        <div class="col-2 buttons">
+            {{#each burgers}}
+            {{#unless devoured}}
+            <button type="button" class="btn devour" data-id="{{id}}">devour!</button>
+            {{/unless}}
+            {{/each}}
+        </div>
+        <div class="col-5 pastBurgs">
+            {{#each burgers}}
+            {{#if devoured}}
+            <div class="oldBurgerName">{{id}}. {{burger_name}}</div>
+            {{/if}}
+            {{/each}}
+        </div>
+    </div>
 
-<form action= "/" method="POST">
-    <textarea type= "text" name="task"></textarea>
-
-    <button type="submit">DEVOUR</button>
-
-
-
+<br><br><br>
+<form class="create-form">
+    <dvi class="form-group">
+        <label for="burgburg">want a burg?</label>
+        <textarea type="text" id="burgburg" class="form-control" rows="3" name="burgname"></textarea>
+    </dvi>
 </form>
+
+</div>
