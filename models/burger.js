@@ -1,16 +1,23 @@
+
 var orm = require("../config/orm.js");
 
 var burg = {
-    selectAll: function(consb) {
+    selectAll: function(burgLyf) {
         orm.selectAll("burgers", function(res) {
-            consb(res);
+            burgLyf(res);
         })
     },
-    insertOne: function(newBurg, consb) {
+    insertOne: function(newBurg, burgLyf) {
         orm.insertOne(newBurg, function(res) {
-            consb(res);
+            burgLyf(res);
+        })
+    },
+    updateOne: function(burgId, burgLyf) {
+        orm.updateOne(burgId, function(res) {
+            burgLyf(res);
         })
     }
+    
 }
 
 module.exports =  burg;
