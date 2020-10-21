@@ -3,6 +3,8 @@
 ## Description
  
 a simple page that displays some crazy burgers that i have eaten. i can then add any burger i like to an input feild and it will show up. if i click a devour button it moves to the devoured side of the page.
+![screenshot for burger app](https://user-images.githubusercontent.com/65675240/96791329-df3d1100-13bd-11eb-94c6-aeca34b311db.PNG)
+
  
 ## Table of Contents
  
