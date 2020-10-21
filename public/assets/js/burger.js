@@ -12,7 +12,7 @@ $(".create-form").on("submit", function(event) {
     event.preventDefault();
 
     var newBurg = {
-        name: $("#burg").val().trim()
+        name: $("#burgburg").val().trim()
     }
     $.ajax("/api/burgers", {
         type: "POST",
