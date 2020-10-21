@@ -2,10 +2,10 @@ var connection = require("../config/connection.js");
 
 var orm = {
     selectAll: function(tableInput, consb) {
-        let queryStr = "SELECT * FROM" + tableInput + ";";
+        let queryStr = "SELECT * FROM " + tableInput + ";";
         connection.query(queryStr, function (err, res) {
             if (err) throw err;
-            consb(res)
+            consb(res);
         })
     },
     insertOne: function(newBurg, consb) {
@@ -19,6 +19,7 @@ var orm = {
         let queryStr = "UPDATE burgers SET devoured = true WHERE ID = " + burgId + ";";
         connection.query(queryStr, function(err, res) {
             if (err) throw err;
+            consb(res);
         })
     }
 }

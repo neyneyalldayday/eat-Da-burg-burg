@@ -1,7 +1,9 @@
 $(function() {
+    $("#eatme").on("click", function(event){
+   
     let id = $(this).data("id");
     let burgId = id;
-    $ajax("/api/burgers/" + id, {
+    $.ajax("/api/burgers/" + id, {
         type: "PUT",
         data: burgId
     }).then(function() {
@@ -11,13 +13,14 @@ $(function() {
 $(".create-form").on("submit", function(event) {
     event.preventDefault();
 
-    var newBurg = {
+    var addBurg = {
         name: $("#burgburg").val().trim()
     }
     $.ajax("/api/burgers", {
         type: "POST",
-        data: newBurg
+        data: addBurg
     }).then(function() {
         location.reload();
     })
+})
 })

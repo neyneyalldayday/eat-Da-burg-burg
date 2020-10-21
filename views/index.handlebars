@@ -17,11 +17,12 @@
             {{#unless devoured}}
             <div class="nameOfBurg">{{id}}. {{burger_name}}</div>
             {{/unless}}
+            {{/each}}
         </div>
         <div class="col-2 buttons">
             {{#each burgers}}
             {{#unless devoured}}
-            <button type="button" class="btn devour" data-id="{{id}}">devour!</button>
+            <button type="button" id="eatme" class="btn btn-dark devour" data-id="{{id}}">scarf!</button>
             {{/unless}}
             {{/each}}
         </div>
@@ -40,6 +41,7 @@
         <label for="burgburg">want a burg?</label>
         <textarea type="text" id="burgburg" class="form-control" rows="3" name="burgname"></textarea>
     </dvi>
+        <button type="submit" class="btn btn-dark">Get A Burg</button>
 </form>
 
 </div>
