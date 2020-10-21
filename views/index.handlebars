@@ -7,9 +7,9 @@
 
 <div class= "container">
     <div class="row">
-        <div class="col-5">Burgs for the eating</div>
-        <div class="col-2">EAT ME!</div>
-        <div class="col-5">scarfed burgs</div>
+        <div class="col-5 tagBoi">Burgs for the eating</div>
+        <div class="col-2 tagBoi">EAT ME!</div>
+        <div class="col-5 tagBoi">scarfed burgs</div>
     </div>
     <div class="row burgSpot">
         <div class="col-5 addedBurgs">
@@ -28,7 +28,7 @@
         <div class="col-5 pastBurgs">
             {{#each burgers}}
             {{#if devoured}}
-            <div class="oldBurgerName">{{id}}. {{burger_name}}</div>
+            <div class="pastBurgName">{{id}}. {{burger_name}}</div>
             {{/if}}
             {{/each}}
         </div>

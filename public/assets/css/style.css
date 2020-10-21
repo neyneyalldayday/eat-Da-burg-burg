@@ -1,0 +1,52 @@
+body {
+    font-family: 'Staatliches', cursive;
+    color:orange;
+    background-size: 70%;
+    background-image:url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.123rf.com%2Fphoto_43965910_stock-illustration-3d-rendered-illustration-of-burger-cartoon-character.html&psig=AOvVaw2EzRhkLXYcsw1T3WthyZz4&ust=1603388299766000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjQkYKdxuwCFQAAAAAdAAAAABAD);
+}
+
+.nameOfBurg,
+.pastBurgName {
+    background-color: orangered;
+    padding-top: 3px;
+    height: 50px;
+    margin-bottom: 3px;
+}
+
+.form-group{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+}
+
+.devour {
+    width:70%;
+    height:30px;
+    font-weight: bolder;
+    margin-bottom: 3px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+h3{
+    color: yellow;
+}
+
+.tagBoi{
+    text-align: center;
+}
+
+.addedBurgs {
+    text-align: center;
+}
+
+.pastBurgs {
+    text-align: center;
+}
+
+
