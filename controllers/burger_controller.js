@@ -4,11 +4,13 @@ var router = express.Router();
 var burg = require("../models/burger.js");
 
 router.get("/", function(req, res) {
-    console.log(req)
-    burg.selectAll(function(data) {
-        res.render("index", { burgers: data });
-    })
+   burg.selectAll(function(data) {
+       res.render("index", { burgers: data });
+   })
 })
+  
+   
+
 router.post("/api/burgers", function(req, res) {
     burg.insertOne([req.body.name], function(result) {
         res.json({ id: result.insertId });
