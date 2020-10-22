@@ -1,10 +1,12 @@
 var express = require("express");
-var burg = require("../models/burger.js");
 var router = express.Router();
 
+var burg = require("../models/burger.js");
+
 router.get("/", function(req, res) {
+    console.log(req)
     burg.selectAll(function(data) {
-        res.render("index", { burgers: data});
+        res.render("index", { burgers: data });
     })
 })
 router.post("/api/burgers", function(req, res) {

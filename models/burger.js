@@ -2,19 +2,19 @@
 var orm = require("../config/orm.js");
 
 var burg = {
-    selectAll: function(burgLyf) {
+    selectAll: function(cb) {
         orm.selectAll("burgers", function(res) {
-            burgLyf(res);
+            cb(res);
         })
     },
-    insertOne: function(newBurg, burgLyf) {
+    insertOne: function(newBurg, cb) {
         orm.insertOne(newBurg, function(res) {
-            burgLyf(res);
+            cb(res);
         })
     },
-    updateOne: function(burgId, burgLyf) {
+    updateOne: function(burgId, cb) {
         orm.updateOne(burgId, function(res) {
-            burgLyf(res);
+            cb(res);
         })
     }
     
