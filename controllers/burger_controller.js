@@ -4,7 +4,7 @@ var burg = require("../models/burger.js");
 var router = express.Router();
 
 
-router.get("/", function(_req, res) {
+router.get("/", function(req, res) {
    burg.selectAll(function(data) {
        res.render("index", { burgers: data });
    })
