@@ -1,48 +1,46 @@
-<h1>EAT DA BURGBURG!!</h1>
-
-
-<h3>scarf some burgers down!!!</h3>
 
 
 
-<div class= "container">
-    <div class="row">
-        <div class="col-5 tagBoi">Burgs for the eating</div>
-        <div class="col-2 tagBoi">EAT ME!</div>
-        <div class="col-5 tagBoi">scarfed burgs</div>
-    </div>
-    <br>
-    <div class="row burgSpot">
-        <div class="col-5 addedBurgs">
-            {{#each burgers}}
-            {{#unless devoured}}
-            <div class="nameOfBurg">{{id}}. {{burger_name}}</div>
-            {{/unless}}
-            {{/each}}
-        </div>
-        <div class="col-2 buttons">
-            {{#each burgers}}
-            {{#unless devoured}}
-            <button type="button" id="eatme" class="btn btn-dark devour" data-id="{{id}}">scarf!</button>
-            {{/unless}}
-            {{/each}}
-        </div>
-        <div class="col-5 pastBurgs">
-            {{#each burgers}}
-            {{#if devoured}}
-            <div class="pastBurgName">{{id}}. {{burger_name}}</div>
-            {{/if}}
-            {{/each}}
-        </div>
-    </div>
+        <header>
+                  <h1>EAT DA BURGBURG!!</h1>
+            <h3>scarf some burgers down!!!</h3>
+        </header>
 
-<br><br><br>
-<form class="create-form">
-    <dvi class="form-group">
-        <label for="burgburg">want a burg?</label>
-        <textarea type="text" id="burgburg" class="form-control" rows="3" name="burgname"></textarea>
-    </dvi>
-        <button type="submit" id="getBurg" class="btn btn-dark">Get A Burg</button>
-</form>
+            <div class="row burgSpot">
+                <div class="col-5 addedBurgs">
+                    <h4 class="col-5 tagBoi">Burgs for the eating</h4>
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    <div class="nameOfBurg">{{id}}. {{burger_name}}</div>
+                    {{/unless}}
+                    {{/each}}
+                </div>
+                <div class="col-2 buttons">
+                    <h4 class="col-2 tagBoi">EAT ME!</h4>
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    <button type="button" id="eatme" class="btn btn-dark devour" data-id="{{id}}">scarf!</button>
+                    {{/unless}}
+                    {{/each}}
+                </div>
+                <div class="col-5 pastBurgs">
+                    <h4 class="col-5 tagBoi">scarfed burgs</h4>
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    <div class="pastBurgName">{{id}}. {{burger_name}}</div>
+                    {{/if}}
+                    {{/each}}
+                </div>
+            </div>
 
-</div>
+            <br><br><br>
+            <form class="create-form">
+                <dvi class="form-group">
+                    <label for="burgburg" class="title">title your burg?</label>
+                    <input type="text" id="burgburg" class="form-control" rows="3" name="burgname" />
+                </dvi>
+                <button type="submit" id="getBurg" class="btn btn-dark">Get A Burg</button>
+            </form>
+
+
+              
